@@ -1,0 +1,25 @@
+<span>hello youtube, thank you for watching this tutorial
+</span>
+<br/>
+<h1>{{ page_title }}</h1>
+
+
+
+{% render "app_snippet" %}
+{% schema %}
+
+  {
+    "name": "Hello world",
+    "target": "section",
+    "stylesheet": "app.css",
+    "javascript": "app.js",
+    "settings": [
+      {
+        "label": "Color",
+        "id": "color",
+        "type": "color",
+        "default": "#000000"
+      }
+    ]
+  }
+{% endschema %}
